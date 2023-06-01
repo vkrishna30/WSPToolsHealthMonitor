@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const fetchData = () => {
     fetch('https://wsptoolchecker.azurewebsites.net/api/data')
